@@ -7,5 +7,26 @@
     "joi": "^17.6.0",
     "mongoose": "^6.3.4",
     "morgan": "^1.10.0"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "name": "montize-backend-express",
+  "version": "1.0.0",
+  "description": "Montize Backend API with Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevHumbleChris/montize-backend-express.git"
+  },
+  "author": "AmChrisKE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevHumbleChris/montize-backend-express/issues"
+  },
+  "homepage": "https://github.com/DevHumbleChris/montize-backend-express#readme"
 }
