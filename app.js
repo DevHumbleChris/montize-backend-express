@@ -3,6 +3,7 @@ const express = require('express')
 const morgan = require('morgan')
 const cors = require('cors')
 const mongoose = require('mongoose')
+const bodyParser = require('body-parser')
 const router = require('./routes')
 
 const app = express()
@@ -12,6 +13,10 @@ const MONGODB_URI = process.env.MONGODB_URI
 // Middlewares.
 app.use(cors())
 app.use(morgan('tiny'))
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({
+    extended: true
+}))
 app.use('/api', router)
 
 // MongoDB Setup.
