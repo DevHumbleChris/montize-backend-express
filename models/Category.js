@@ -5,13 +5,16 @@ const newCategory = mongoose.Schema({
         type: String,
         required: true
     },
-    icon: {
+    description: {
         type: String,
-        default: 'fas fa-acorn'
     },
     color: {
         type: String,
-        default: 'blue'
+        default: '#003d5b'
+    },
+    monthlyBudget: {
+        type: Number,
+        required: true
     },
     dateCreated: {
         type: Date,
