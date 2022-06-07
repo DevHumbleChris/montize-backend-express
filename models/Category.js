@@ -5,9 +5,6 @@ const newCategory = mongoose.Schema({
         type: String,
         required: true
     },
-    description: {
-        type: String,
-    },
     color: {
         type: String,
         default: '#003d5b'
