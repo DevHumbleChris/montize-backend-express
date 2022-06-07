@@ -47,8 +47,8 @@ module.exports = {
     
             const newCategory = new Category({
                 name: req.body.name,
-                icon: req.body.icon,
-                color: req.body.color
+                color: req.body.color,
+                monthlyBudget: req.body.monthlyBudget
             })
     
             await newCategory.save((err, results) => {
