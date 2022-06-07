@@ -23,11 +23,11 @@ app.use((req, res, next) => {
         message: 'Page Not Found'
     })
 })
-app.use((err, req, res, next) => {
-    res.status(500).json({
-        message: 'Internal Server Error'
-    })
-})
+// app.use((err, req, res, next) => {
+//     res.status(500).json({
+//         message: 'Internal Server Error'
+//     })
+// })
 
 // MongoDB Setup.
 mongoose.connect(MONGODB_URI, {
